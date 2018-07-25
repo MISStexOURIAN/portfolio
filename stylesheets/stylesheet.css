@@ -77,6 +77,15 @@ a:hover {
     border: none;
 }
 
+#code {
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+    margin-left: 30px;
+    margin-top: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .banner {
     margin-bottom: 0px;
     background-image: url(../images/arch3.jpg);
@@ -448,6 +457,12 @@ footer p {
     }
 }
 
+@media screen and (max-width: 667px) {
+    #code {
+        margin: 25px auto;
+    }
+}
+
 
 @media only screen and (min-width: 451px) and (max-width: 580px) {
     .navbar-brand {
@@ -482,9 +497,11 @@ footer p {
         margin: 0px auto;
     }
 
-    #email {
+    #email,
+    #code {
         font-size: 18px;
     }
+
 }
 
 @media only screen and (min-width: 320px) and (max-width: 450px) {
@@ -525,6 +542,11 @@ footer p {
 
     #contactBtn {
         margin-right: 10px;
+    }
+
+    #code {
+        font-size: 18px;
+        margin: 30px auto;
     }
 
     .skills.container-fluid,
